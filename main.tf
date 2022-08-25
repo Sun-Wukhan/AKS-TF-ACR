@@ -1,9 +1,9 @@
 terraform {
   backend "remote" {
     hostname     = "app.terraform.io"
-    organization = "bondbrandloyalty"
+    organization = ""
     workspaces {
-      prefix = "juan-"
+      prefix = ""
     }
   }
   required_providers {
