@@ -15,8 +15,8 @@ resource "azurerm_windows_virtual_machine" "aks_vm_01" {
   resource_group_name = azurerm_resource_group.aks.name
   location            = azurerm_resource_group.aks.location
   size                = "Standard_D4s_v3"
-  admin_username      = "adminuser"
-  admin_password      = "P@$$w0rd1234!"
+  admin_username      = ""
+  admin_password      = ""
   network_interface_ids = [
     azurerm_network_interface.vm_nic_resources.id,
   ]
